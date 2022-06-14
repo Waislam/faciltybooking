@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <title>w2 leisure</title>
+</head>
+<body>
+    <div class="container myclass">
+        <h1>Upload, Run and Download</h1>
+<!--        csv upload option start-->
+        <form action="" method="post" enctype="multipart/form-data" >
+            <input type="file" name="csvfile">
+            <input type="submit" value="Submit">
+        </form>
+<!--        csv upload option end-->
+<!--        script run button start-->
+        <a href="/run">Run</a>
+<!--        script run button end-->
+<!--        script run button start-->
+        <p>
+            <a href="{{url_for('static', filename='output/result.csv')}}">Download</a>
+        </p>
+<!--        script run button end-->
+    </div>
+
+    <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+</body>
+</html>

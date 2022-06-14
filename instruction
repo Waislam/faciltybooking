@@ -1,0 +1,17 @@
+==============================installation process===========================
+1. create a virtualenv with the command "virtualenv yourvirtuanevnname"
+2. activate virtual env with following steps
+                            ### for windows
+                                    1. enter into the virutal env via command line
+                                    2. then "cd scripts"
+                                    3. then "activate"
+                                    4. then go back to the environment root 'cd..'
+                            ### for linux
+                                    1. from outside of virtualenv run this command "source virutanenvname/bin/activate"
+
+
+3. run this commmand "pip install -r requirements.txt"
+4. run this "python play.py" or flask run
+5. go to this link on browser "http://127.0.0.1:5000/"
+6. then upload your desired csv file with the format I have attached.. then submit
+7. then run...

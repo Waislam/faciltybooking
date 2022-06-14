@@ -1,0 +1,4 @@
+.idea/
+appointment/__pycache__/
+app/__pycache__/
+.env
